@@ -31,6 +31,12 @@ colors.forEach((color, index) => {
 // 5. Выведите только элементы с индексом меньше 3.
 const numbers2 = [10, 20, 30, 40, 50];
 
+numbers2.forEach((number, index) => {
+  if (index < 3) {
+    console.log(number);
+  }
+});
+
 numbers2.slice(0, 3).forEach((number) => console.log(number));
 numbers2.slice(2, 5).forEach((number) => console.log(number));
 numbers2.slice(1, 4).forEach((number) => console.log(number));
@@ -397,13 +403,9 @@ const users3 = [
   { name: "Aruzhan", age: 20 },
 ];
 
-const adultsNames = users3.filter((user) => {
-  return user.age >= 18;
-});
-users3.map((user) => {
-  return user.name;
-});
-
+const adultsNames = users3
+.filter((user) => user.age >= 18)
+.map((user) => user.name);
 console.log(adultsNames);
 
 // Часть 9. Code review
@@ -454,12 +456,12 @@ for (let i = 0; i < numbers14.length; i++) {
 // console.log(k);
 // }
 // он бесконечно будет давать 0
-// нужно добавить i++
+// нужно добавить k++
 
 let k = 0;
 while (k < 5) {
-  k++;
   console.log(k);
+  k++;
 }
 
 // 52. Задача - оставить только доступные товары. Исправьте код.
