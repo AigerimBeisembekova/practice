@@ -697,18 +697,18 @@ const filteredProductsNames = products66
 
 console.log(filteredProductsNames);
 
-function filteredProductsNames66(price){
+function filteredProductsNames66(price) {
   return products66
-  .filter((product) => product.isAvailable && product.price >= price)
-  .map((product) => product.name);
+    .filter((product) => product.isAvailable && product.price >= price)
+    .map((product) => product.name);
 }
 
-function inputValue66(){
+function inputValue66() {
   const inputValue66 = minPriceInput66.value;
-  if(inputValue66 === ""){
+  if (inputValue66 === "") {
     console.log("Введите минимальную цену");
     return;
-  }else{
+  } else {
     const inputPrice = +inputValue66;
     const result = filteredProductsNames66(inputPrice);
     console.log(result);
