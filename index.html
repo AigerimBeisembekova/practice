@@ -14,22 +14,157 @@
     <div class="card">Карточка 2</div>
     <div class="card">Карточка 3</div>
 
-    <input class="name-input" type="text">
+    <input class="name-input" type="text" />
     <button class="show-button">Показать</button>
     <button class="color-button">Сменить цвет</button>
     <a class="google-link" href="https://google.com">Google</a>
     <form class="form">
-    <input class="email-input" type="email">
-    <button type="submit">Отправить</button>
-    <button class="expensive-products-button">Показать дорогие товары</button>
-    <input class="min-price-input" type="text">
-    <button class="min-price-button">Показать</button>
+      <input class="email-input" type="email" />
+      <button type="submit">Отправить</button>
+      <button class="expensive-products-button">Показать дорогие товары</button>
+      <input class="min-price-input" type="text" />
+      <button class="min-price-button">Показать</button>
+    </form>
+
+    <form id="subscribe-form-1">
+      <input
+        class="email-input-1"
+        label="Почта"
+        placeholder="Введите почту"
+        name="email"
+        type="email"
+        minlength="5"
+        required
+      />
+      <button class="submit-button-1" type="submit">Подписаться</button>
+    </form>
+
+    <form id="feedback-form">
+      <input
+        class="feedback-name"
+        label="Name"
+        type="text"
+        name="name"
+        placeholder="Введите имя"
+        minlength="2"
+        required
+      />
+      <input
+        class="feedback-email"
+        label="Email"
+        type="email"
+        name="email"
+        placeholder="Введите почту"
+        required
+      />
+      <textarea
+        class="feedback-message"
+        label="Message"
+        type="text"
+        name="message"
+        placeholder="Введите сообщение"
+        required
+      ></textarea>
+
+      <input
+        class="feedback-username"
+        label="username"
+        type="input"
+        name="username"
+        placeholder="Введите имя пользователя"
+        required
+      />
+      <textarea
+        class="feedback-textarea-input"
+        label="textarea"
+        name="textarea"
+        placeholder="Введите текст"
+        maxlength="100"
+        required
+      ></textarea>
+      <p class="char-count">0 / 100</p>
+
+      <select class="roleSelect" name="role">
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="design">Design</option>
+      </select>
+
+      <input id="agree" name="agree" type="checkbox" required />
+      <label for="agree">Я согласен с правилами</label>
+
+      <button class="feedback-submit-button" type="submit">Отправить</button>
+    </form>
+
+    <form id="surveyForm">
+      <input
+        class="survey-first-name"
+        label="Firstname"
+        name="firstname"
+        type="text"
+        placeholder="Имя"
+        minlength="1"
+        required
+      />
+
+      <input
+        class="survey-last-name"
+        label="Lastname"
+        name="lastname"
+        type="text"
+        placeholder="Фамилия"
+        minlength="1"
+        required
+      />
+
+      <input
+        class="survey-email"
+        label="Email"
+        name="email"
+        type="email"
+        placeholder="Почта"
+        minlength="5"
+        required
+      />
+
+      <input
+        class="survey-DOB"
+        label="Date of birth"
+        name="DOB"
+        type="date"
+        placeholder="Дата рождения"
+        required
+      />
+
+      <label for="survey-role">Профессия</label>
+      <select class="survey-role" name="role">
+        <option value="lawyer">Lawyer</option>
+        <option value="musician">Musician</option>
+        <option value="teacher">Teacher</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="survey-message">Комментарий</label>
+      <textarea
+        class="survey-message"
+        label="message"
+        name="message"
+        maxlength="100"
+        required
+      >
+      </textarea>
+      <p class="symbol-count">0 / 100</p>
+
+      <input id="survey-checkbox" name="agree" type="checkbox" required />
+      <label for="survey-checkbox">Я согласен</label>
+
+      <button class="survey-form-btn" type="submit">Отправить</button>
     </form>
 
     <script src="task-1.js"></script>
     <script src="task-2.js"></script>
     <script src="task-3.js"></script>
     <script src="task-4.js"></script>
-    
+    <script src="task-5.js"></script>
   </body>
 </html>

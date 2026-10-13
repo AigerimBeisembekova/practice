@@ -25,7 +25,7 @@ names111.forEach(greet);
 function sum(a, b) {
   return a + b;
 }
-console.log(sum(2, 5));
+// console.log(sum(2, 5));
 
 // 4. Создайте функцию multiply, которая принимает два числа и возвращает их произведение.
 function multiply(a, b) {
@@ -137,7 +137,7 @@ function sum3(a, b) {
   console.log(a + b);
 }
 const result = sum3(2, 3);
-console.log(result);
+// console.log(result);
 // 5 и undefined
 // сначала консоль выведет 5, потом result не найдет sum3 потому что нет return
 
