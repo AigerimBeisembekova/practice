@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="task-6.css" />
   </head>
   <body>
     <h1 id="title">Выбери свой продукт</h1>
@@ -161,10 +162,333 @@
       <button class="survey-form-btn" type="submit">Отправить</button>
     </form>
 
+    <form id="formSix">
+      <input
+        class="form-6-name"
+        name="name"
+        type="text"
+        placeholder="Имя"
+        required
+      />
+
+      <input
+        class="form-6-email"
+        name="email"
+        type="email"
+        placeholder="Почта"
+        minlength="5"
+        required
+      />
+
+      <textarea
+        class="form-6-textarea"
+        name="message"
+        placeholder="Сообщение"
+        maxlength="100"
+        required
+      >
+      </textarea>
+      <p class="char-count">0/100</p>
+
+      <button class="form-6-btn" type="submit">Отправить</button>
+    </form>
+
+    <form id="password-practice">
+      <input
+        class="password"
+        name="password"
+        type="password"
+        placeholder="Пароль"
+        minlength="6"
+        required
+      />
+
+      <input
+        class="confirm-password"
+        name="confirm-password"
+        type="password"
+        minlength="6"
+        placeholder="Повторите пароль"
+        required
+      />
+
+      <button class="password-submit-btn" type="submit">Отправить</button>
+    </form>
+
+    <form id="formSeven">
+      <input
+        class="form-7-name"
+        name="name"
+        type="text"
+        placeholder="Имя"
+        required
+      />
+
+      <input
+        class="form-7-surname"
+        name="surname"
+        type="text"
+        placeholder="Фамилия"
+        required
+      />
+
+      <input
+        class="form-7-email"
+        name="email"
+        type="email"
+        placeholder="Почта"
+        minlength="5"
+        required
+      />
+
+      <label for="form-7-DOB">Дата рождения</label>
+      <input class="form-7-DOB" name="date of birth" type="date" required />
+
+      <button class="form-7-btn" type="submit">Отправить</button>
+    </form>
+
+    <form id="registrationFormPractice">
+      <input
+        class="registration-form-name"
+        name="name"
+        type="text"
+        placeholder="Имя"
+        required
+      />
+
+      <input
+        class="registration-form-login"
+        name="login"
+        type="text"
+        placeholder="Логин"
+        minlength="6"
+        required
+      />
+
+      <input
+        class="registration-form-email"
+        name="email"
+        type="email"
+        placeholder="Почта"
+        minlength="5"
+        required
+      />
+
+      <input
+        class="password-1"
+        name="password"
+        type="password"
+        placeholder="Пароль"
+        minlength="6"
+        required
+      />
+
+      <input
+        class="confirm-password-1"
+        name="confirm-password"
+        type="password"
+        minlength="6"
+        placeholder="Повторите пароль"
+        required
+      />
+
+      <button class="registration-form--btn" type="submit">Отправить</button>
+    </form>
+
+    <button class="modal-open-btn" type="button">Оставить заявку</button>
+
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div
+        class="modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="registration-title"
+      >
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Закрыть модальное окно"
+        >
+          &times;
+        </button>
+
+        <h2 class="modal-title" id="registration-title">Заявка</h2>
+
+        <p class="modal-description">Заполните данные для отправки заявки</p>
+        <form class="registration-form" id="registration-form">
+          <div class="registration-form_row">
+            <div class="registration-form_field">
+              <label class="registration-form_label" for="first-name"
+                >Имя</label
+              >
+              <input
+                class="registration-form_input"
+                id="first-name"
+                name="firstName"
+                type="text"
+                placeholder="Введите имя"
+                minlength="2"
+                maxlength="20"
+                required
+              />
+
+              <label class="registration-form_label" for="phone-number"
+                >Телефон</label
+              >
+              <input
+                class="registration-form_input"
+                id="phone-number"
+                name="phoneNumber"
+                type="tel"
+                placeholder="Введите номер телефона"
+                minlength="7"
+                maxlength="20"
+                required
+              />
+
+              <label class="registration-form_label" for="email">Почта</label>
+              <input
+                class="registration-form_input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Введите почту"
+                minlength="5"
+                required
+              />
+
+              <button class="registration-form_btn" type="submit">
+                Отправить заявку
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <button class="modal2-open-btn" type="button">
+      Зарегистрироваться на мероприятие
+    </button>
+
+    <div class="modal2">
+      <div class="modal2-overlay"></div>
+      <div
+        class="modal2-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="reg-title"
+      >
+        <button class="modal2-close" type="button" aria-label="Закрыть окно">
+          &times;
+        </button>
+
+        <h2 class="modal2-title" id="reg-title">Регистрация на мероприятие</h2>
+
+        <p class="modal2-description">Заполните</p>
+
+        <form class="reg-form" id="reg-form">
+          <div class="reg-form_row">
+            <div class="reg-form_field">
+              <label class="reg-form_label" for="firstName">Имя</label>
+              <input
+                class="reg-form-input"
+                id="firstName"
+                name="firstName"
+                type="text"
+                placeholder="Введите имя"
+                minlength="2"
+                maxlength="20"
+                required
+              />
+
+              <label class="reg-form_label" for="lastName">Фамилия</label>
+              <input
+                class="reg-form-input"
+                id="lastName"
+                name="lastName"
+                type="text"
+                placeholder="Введите фамилию"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+
+              <label class="reg-form_label" for="email">Почта</label>
+              <input
+                class="reg-form-input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Введите почту"
+                minlength="6"
+                required
+              />
+
+              <label class="reg-form_label" for="dateOfBirth"
+                >Дата рождения</label
+              >
+              <input
+                class="reg-form-input"
+                id="dateOfBirth"
+                name="dateOfBirth"
+                type="date"
+                placeholder="Введите дату рождения"
+                required
+              />
+
+              <label class="reg-form_label" for="login">Логин</label>
+              <input
+                class="reg-form-input"
+                id="login"
+                name="login"
+                type="text"
+                placeholder="Введите логин"
+                minlength="6"
+                maxlength="20"
+                required
+              />
+
+              <label class="reg-form_label" for="password">Пароль</label>
+              <input
+                class="reg-form-input"
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Введите пароль"
+                minlength="6"
+                maxlength="20"
+                required
+              />
+
+              <label class="reg-form_label" for="confirmPassword"
+                >Повторите пароль</label
+              >
+              <input
+                class="reg-form-input"
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+                placeholder="Повторите пароль"
+                minlength="6"
+                maxlength="20"
+                required
+              />
+
+              <button class="reg-form_btn" type="submit">
+                Зарегестрироваться
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="task-1.js"></script>
     <script src="task-2.js"></script>
     <script src="task-3.js"></script>
     <script src="task-4.js"></script>
     <script src="task-5.js"></script>
+    <script src="task-6.js"></script>
   </body>
 </html>
