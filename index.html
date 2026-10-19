@@ -162,17 +162,21 @@
       <button class="survey-form-btn" type="submit">Отправить</button>
     </form>
 
+    <label class="formSix-label" for="form-6-name">Имя</label>
     <form id="formSix">
       <input
         class="form-6-name"
+        id="form-6-name"
         name="name"
         type="text"
         placeholder="Имя"
         required
       />
 
+      <label class="formSix-label" for="form-6-email">Почта</label>
       <input
         class="form-6-email"
+        id="form-6-email"
         name="email"
         type="email"
         placeholder="Почта"
@@ -180,8 +184,10 @@
         required
       />
 
+      <label class="formSix-label" for="form-6-textarea">Сообщение</label>
       <textarea
         class="form-6-textarea"
+        id="form-6-textarea"
         name="message"
         placeholder="Сообщение"
         maxlength="100"
@@ -242,7 +248,7 @@
       />
 
       <label for="form-7-DOB">Дата рождения</label>
-      <input class="form-7-DOB" name="date of birth" type="date" required />
+      <input class="form-7-DOB" id="form-7-DOB" name="dateOfBirth" type="date" required />
 
       <button class="form-7-btn" type="submit">Отправить</button>
     </form>
@@ -452,7 +458,7 @@
               <label class="reg-form_label" for="password">Пароль</label>
               <input
                 class="reg-form-input"
-                id="password"
+                id="password3"
                 name="password"
                 type="password"
                 placeholder="Введите пароль"
@@ -466,7 +472,7 @@
               >
               <input
                 class="reg-form-input"
-                id="confirmPassword"
+                id="confirmPassword3"
                 name="confirmPassword"
                 type="password"
                 placeholder="Повторите пароль"
