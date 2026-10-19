@@ -16,10 +16,10 @@ const formSix = document.querySelector("#formSix");
 formSix.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(formSix);
-  formSix.reset();
   console.log(formData.get("name"));
   console.log(formData.get("email"));
   console.log(formData.get("message"));
+    formSix.reset();
 });
 
 /* 2. Проверка двух значений
@@ -31,11 +31,12 @@ formSix.addEventListener("submit", (event) => {
 успешной смене пароля в консоль.*/
 
 const passwordCheck = document.querySelector("#password-practice");
+const password = document.querySelector(".password");
+const confirmPassword = document.querySelector(".confirm-password");
+
 
 passwordCheck.addEventListener("submit", (event) => {
   event.preventDefault();
-  const password = document.querySelector(".password");
-  const confirmPassword = document.querySelector(".confirm-password");
   if (password.value !== confirmPassword.value) {
     alert("Пароли не совпадают");
     return;
@@ -72,13 +73,14 @@ repeatPassword, добавьте свойство createdOn с текущей д
 const registrationFormPractice = document.querySelector(
   "#registrationFormPractice",
 );
+const password1 = document.querySelector(".password-1");
+const confirmPassword1 = document.querySelector(".confirm-password-1");
+
 
 registrationFormPractice.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(registrationFormPractice);
   const registrationFormPracticeValues = Object.fromEntries(formData);
-  const password1 = document.querySelector(".password-1");
-  const confirmPassword1 = document.querySelector(".confirm-password-1");
   if (password1.value !== confirmPassword1.value) {
     alert("Пароли не совпадают");
     return;
@@ -155,6 +157,9 @@ const modal2Container = document.querySelector(".modal2");
 const modal2Overlay = document.querySelector(".modal2-overlay");
 const regForm = document.querySelector("#reg-form");
 const modal2CloseBtn = document.querySelector(".modal2-close");
+const password3 = document.querySelector("#password3");
+const confirmPassword3 = document.querySelector("#confirmPassword3");
+
 
 modal2OpenBtn2.addEventListener("click", (event) => {
   modal2Container.classList.add("is-open");
@@ -172,9 +177,7 @@ regForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(regForm);
   const regFormValues = Object.fromEntries(formData);
-  const password = document.querySelector("#password");
-  const confirmPassword = document.querySelector("#confirmPassword");
-  if (password.value !== confirmPassword.value) {
+  if (password3.value !== confirmPassword3.value) {
     alert("Пароли не совпадают");
   } else {
     delete regFormValues.password;
